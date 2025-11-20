@@ -1,0 +1,166 @@
+## Build and Release Folders
+bin/
+obj/
+out/
+publish/
+node_modules/
+
+## Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Mac and Linux system files
+.DS_Store
+*.swp
+*~
+
+## Logs and Temporary Files
+*.log
+logs/
+Temp/
+tmp/
+*.tmp
+
+## Environment and Secrets
+.env
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+
+## Test Results
+TestResults/
+*.coverage
+*.coveragexml
+
+## NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+## Build Cache
+project.lock.json
+artifacts/
+
+## Backup and Archive Files
+*.bak
+*.zip
+*.tar
+*.gz
+
+## IDE Metadata
+.idea/
+*.iml
+
+## OS-Specific
+Thumbs.db
+desktop.ini
+
+## Docker
+docker-compose.override.yml
+docker-compose.local.yml
+
+## Rider
+.idea/
+.idea/**
+
+## JetBrains Rider temp
+.idea/
+*.iws
+*.ipr
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+## Others
+*.dbmdl
+*.jfm
+## Build and Release Folders
+bin/
+obj/
+out/
+publish/
+node_modules/
+
+## Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Mac and Linux system files
+.DS_Store
+*.swp
+*~
+
+## Logs and Temporary Files
+*.log
+logs/
+Temp/
+tmp/
+*.tmp
+
+## Environment and Secrets
+.env
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+
+## Test Results
+TestResults/
+*.coverage
+*.coveragexml
+
+## NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+## Build Cache
+project.lock.json
+artifacts/
+
+## Backup and Archive Files
+*.bak
+*.zip
+*.tar
+*.gz
+
+## IDE Metadata
+.idea/
+*.iml
+
+## OS-Specific
+Thumbs.db
+desktop.ini
+
+## Docker
+docker-compose.override.yml
+docker-compose.local.yml
+
+## Rider
+.idea/
+.idea/**
+
+## JetBrains Rider temp
+.idea/
+*.iws
+*.ipr
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+## Others
+*.dbmdl
+*.jfm
+
+migrations
