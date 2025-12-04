@@ -1,0 +1,42 @@
+{
+    "TableName": "Projects",
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "ProjectId",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "CreatedBy",
+            "AttributeType": "S"
+        }
+    ],
+    "KeySchema": [
+        {
+            "AttributeName": "ProjectId",
+            "KeyType": "HASH"
+        }
+    ],
+    "GlobalSecondaryIndexes": [
+        {
+            "IndexName": "CreatedByIndex",
+            "KeySchema": [
+                {
+                    "AttributeName": "CreatedBy",
+                    "KeyType": "HASH"
+                }
+            ],
+            "Projection": {
+                "ProjectionType": "ALL"
+            },
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": 5,
+                "WriteCapacityUnits": 5
+            }
+        }
+    ],
+    "BillingMode": "PROVISIONED",
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 5,
+        "WriteCapacityUnits": 5
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "TableName": "Tasks",
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "TaskId",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "ProjectId",
+            "AttributeType": "S"
+        }
+    ],
+    "KeySchema": [
+        {
+            "AttributeName": "TaskId",
+            "KeyType": "HASH"
+        }
+    ],
+    "GlobalSecondaryIndexes": [
+        {
+            "IndexName": "ProjectIdIndex",
+            "KeySchema": [
+                {
+                    "AttributeName": "ProjectId",
+                    "KeyType": "HASH"
+                }
+            ],
+            "Projection": {
+                "ProjectionType": "ALL"
+            },
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": 5,
+                "WriteCapacityUnits": 5
+            }
+        }
+    ],
+    "BillingMode": "PROVISIONED",
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 5,
+        "WriteCapacityUnits": 5
+    }
+}

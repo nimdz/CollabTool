@@ -1,0 +1,9 @@
+@TASK_URL = http://localhost:5189
+
+GET {{TaskService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET{{TASK_URL}}/api/project
+Accept: application/json
